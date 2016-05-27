@@ -85,7 +85,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -143,7 +143,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dialog_main.cpp" />
+    <ClCompile Include="dialog_setup.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="socket_error.cpp" />
+    <ClCompile Include="socket_mlticast.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dialog_main.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="socket_error.h" />
+    <ClInclude Include="socket_lib.h" />
+    <ClInclude Include="socket_multicast.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dialog.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
